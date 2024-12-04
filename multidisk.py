@@ -40,7 +40,7 @@ def create_m3u(unions):
 
         with open(path, 'w') as f:
             for file in files:
-                f.write(file + '\n')
+                f.write('.hidden/' + file + '\n')
 
         for file in files:
             oldpath = where + '/' + file
